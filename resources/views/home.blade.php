@@ -2,6 +2,16 @@
 
 @section('main')
     <main>
-        <h1>Main</h1>
+        <ul class="container comics-list">
+            @foreach ($comics as $comic)
+                <li class="card">
+                    <div>
+                        <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
+                    </div>
+                    <div class="title">{{ $comic['title'] }}</div>
+
+                </li>
+            @endforeach
+        </ul>
     </main>
 @endsection
