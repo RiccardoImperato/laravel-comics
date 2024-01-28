@@ -12,7 +12,7 @@
                 <p>{{ $comics[1]['description'] }}</p>
             </div>
             <div class="image">
-                <img src="{{ Vite::asset('resources/img/adv.jpg') }}" alt="">
+                <img src="{{ Vite::asset('resources/img/adv.jpg') }}" alt="Adevertisement">
             </div>
         </div>
     </main>
