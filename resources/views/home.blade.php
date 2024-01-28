@@ -5,12 +5,12 @@
         <div class="container">
             <div class="series badge">Current series</div>
             <ul class="comics-list">
-                @foreach ($comics as $comic)
+                @foreach ($comics as $key => $comic)
                     <li class="card">
                         <div>
                             <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
                         </div>
-                        <a href="about" class="title">{{ $comic['title'] }}</a>
+                        <a href="about{{ $key }}" class="title">{{ $comic['title'] }}</a>
                     </li>
                 @endforeach
             </ul>

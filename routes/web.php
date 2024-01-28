@@ -22,11 +22,38 @@ Route::get('/', function () {
     return view('home', $data);
 });
 
-Route::get('/about', function () {
+Route::get('/about0', function () {
 
     $data = [
         "comics" => config('comicsdb')
     ];
 
-    return view('about', $data);
+    return view('about0', $data);
+});
+
+Route::get('/about1', function () {
+
+    $data = [
+        "comics" => config('comicsdb')
+    ];
+
+    return view('about1', $data);
+});
+
+Route::get('/about2', function () {
+
+    $data = [
+        "comics" => config('comicsdb')
+    ];
+
+    return view('about2', $data);
+});
+
+Route::get('/about3', function () {
+
+    $data = [
+        "comics" => config('comicsdb')
+    ];
+
+    return view('about3', $data);
 });
