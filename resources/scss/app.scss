@@ -148,7 +148,7 @@ main {
 
     .more {
         text-align: center;
-        margin-top: 20px;
+        margin: 25px 0;
 
         button {
             cursor: pointer;
@@ -171,28 +171,27 @@ main {
     .detail {
         display: flex;
         gap: 30px;
+        position: relative;
 
-        .info {
-            position: relative;
+        .thumb {
+            width: 250px;
+            position: absolute;
+            top: -400px;
 
-            .thumb {
-                width: 250px;
-                position: absolute;
-                bottom: 300px;
-
-                img {
-                    width: 100%;
-                    display: block;
-                }
-            }
-
-            .price {
-                margin: 20px 0;
-                padding: 15px 30px;
-                color: #fff;
-                background-color: #55ba59;
+            img {
+                height: 340px;
+                width: 100%;
+                display: block;
             }
         }
+
+        .price {
+            margin: 20px 0;
+            padding: 15px 30px;
+            color: #fff;
+            background-color: #55ba59;
+        }
+
     }
 }
 
