@@ -7,10 +7,10 @@
             <ul class="comics-list">
                 @foreach ($comics as $key => $comic)
                     <li class="card">
-                        <div>
+                        <a href="about{{ $key }}">
                             <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
-                        </div>
-                        <a href="about{{ $key }}" class="title">{{ $comic['title'] }}</a>
+                            <div class="title">{{ $comic['title'] }}</div>
+                        </a>
                     </li>
                 @endforeach
             </ul>
