@@ -24,5 +24,9 @@ Route::get('/', function () {
 
 Route::get('/about', function () {
 
-    return view('about');
+    $data = [
+        "comics" => config('comicsdb')
+    ];
+
+    return view('about', $data);
 });

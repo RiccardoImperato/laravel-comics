@@ -161,11 +161,38 @@ main {
 /* About */
 
 .about {
-    color: #222;
+    color: #555555;
     background-color: #fff;
+
+    h1 {
+        color: #003f5e;
+    }
 
     .detail {
         display: flex;
+        gap: 30px;
+
+        .info {
+            position: relative;
+
+            .thumb {
+                width: 250px;
+                position: absolute;
+                bottom: 300px;
+
+                img {
+                    width: 100%;
+                    display: block;
+                }
+            }
+
+            .price {
+                margin: 20px 0;
+                padding: 15px 30px;
+                color: #fff;
+                background-color: #55ba59;
+            }
+        }
     }
 }
 
