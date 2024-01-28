@@ -1,7 +1,5 @@
-# Template Laravel
+# Laravel Comics
 
-### Get Started: 
-
-- composer install
-- npm install 
-- copia file env
+Per questa versione dell'erscizio Vite Comics realizzata con laravel, sono partito da un template creato da me e ho reciclato il codice del vecchio esrcizio per adattarlo alla nuova struttura.
+Tutte le pagine condividono lo stesso layout formato da due partials header e footer inclusi con il metodo `@incudes()`, mentre per la parte del main ho utilizzato il metodo `@yield()` per includere la porzione di codice con la lista di fumetti nella pagina home e con le info dei fumetti nelle relative pagine about.
+Ho usato un ciclo @foreach per stampare la card e per ottenere l'indice dell'array di fumetti `@foreach ($comics as $key => $comic)`, e ho usato la key per reindirizzare l'utente, al click sulla card, alla relativa pagina con immagine, titolo, prezzo e descrizione del fumetto `<a href="about{{ $key }}">`.    
