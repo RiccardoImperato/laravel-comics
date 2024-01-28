@@ -1,33 +1,6 @@
 {{-- Footer --}}
 <footer>
-    <div class="banner">
-        <div class="container">
-            <ul>
-                <li>
-                    <img src="{{ Vite::asset('resources/img/buy-comics-digital-comics.png') }}">
-                    <a href="#">
-                        Digital comics
-                    </a>
-                </li>
-                <li>
-                    <img src="{{ Vite::asset('resources/img/buy-comics-merchandise.png') }}">
-                    <a href="#">Dc merchandise</a>
-                </li>
-                <li>
-                    <img src="{{ Vite::asset('resources/img/buy-comics-subscriptions.png') }}">
-                    <a href="#">Subscription</a>
-                </li>
-                <li>
-                    <img src="{{ Vite::asset('resources/img/buy-comics-shop-locator.png') }}">
-                    <a href="#">Comic Shop locator</a>
-                </li>
-                <li>
-                    <img src="{{ Vite::asset('resources/img/buy-dc-power-visa.svg') }}">
-                    <a href="#">Dc power visa</a>
-                </li>
-            </ul>
-        </div>
-    </div>
+
     <div class="bg">
         <div class="container">
             <div class="list">
