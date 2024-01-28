@@ -4,7 +4,6 @@ $banner-bg: #0282f9;
 $footer-bg: #303030;
 
 
-
 /* Reset */
 
 * {
@@ -131,6 +130,48 @@ main {
 
 /* Footer */
 
+/* Banner */
+
+.banner {
+    background-color: $banner-bg;
+    color: #fff;
+    padding: 50px 0;
+
+    .container {
+        padding: 0 40px;
+
+        ul {
+            all: unset;
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            text-transform: uppercase;
+
+            img {
+                object-fit: contain;
+                width: 50px;
+                height: 50px;
+            }
+
+            a {
+                margin-left: 15px;
+            }
+        }
+    }
+}
+
+/*/ Banner */
+
+/* Footer top */
+
 .bg {
     color: #fff;
     background-image: url(../img/footer-bg.jpg);
@@ -180,5 +221,57 @@ main {
         }
     }
 }
+
+/*/ Footer top */
+
+/* Footer bottom */
+
+footer {
+    background-color: $footer-bg;
+    color: #fff;
+
+    .footer-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 25px 0;
+
+        button {
+            all: unset;
+            cursor: pointer;
+            padding: 15px;
+            text-transform: uppercase;
+            font-weight: bold;
+            border: 2px solid transparent;
+            border: 2px solid $banner-bg;
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+
+            span {
+                margin: 0 20px;
+                font-weight: bold;
+                text-transform: uppercase;
+                color: $banner-bg;
+            }
+
+            ul {
+                all: unset;
+                list-style-type: none;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+
+                a:hover {
+                    filter: brightness(2);
+                }
+            }
+        }
+    }
+}
+
+/*/ Footer bottom */
 
 /*/ Footer */
