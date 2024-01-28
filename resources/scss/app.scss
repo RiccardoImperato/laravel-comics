@@ -1,8 +1,11 @@
+/* Variables */
+
 $header-bg: #fff;
 $main-bg: #1c1c1c;
 $banner-bg: #0282f9;
 $footer-bg: #303030;
 
+/*/ Variables */
 
 /* Reset */
 
@@ -13,6 +16,7 @@ $footer-bg: #303030;
 }
 
 /*/ Reset */
+
 
 /*/ Common */
 
@@ -37,7 +41,8 @@ a {
 
 /*/ Common */
 
-/* header */
+
+/* Header */
 
 header {
     color: #464646;
@@ -86,7 +91,7 @@ header {
     }
 }
 
-/*/ header */
+/*/ Header */
 
 
 /* Main */
@@ -152,6 +157,19 @@ main {
         }
     }
 }
+
+/* About */
+
+.about {
+    color: #222;
+    background-color: #fff;
+
+    .detail {
+        display: flex;
+    }
+}
+
+/*/ About */
 
 /*/ Main */
 
